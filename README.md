@@ -1,3 +1,5 @@
 # Belajar Struktur Data & Algoritma
 
-Sedang belajar tahap kedua
+Belajar Python :
+
+pip install requests
