@@ -38,4 +38,20 @@ print(hasil.group(3))  # 1945 (tahun)
 r'''
 Catatan : 
 Biasakan menulis pola dengan awalan r (raw string), contoh r"\d+". Ini mencegah Python salah mengartikan tanda \.
+
+Pola	Arti	        Contoh cocok
+\d	    digit           (0-9)	5
+\D	    bukan digit	a,  spasi, -
+\w	    huruf, angka, atau _	a, Z, 5, _
+\W	    bukan \w	spasi, @, !
+\s	    whitespace (spasi, tab, newline)	
+\S	    bukan whitespace	a, 1
+
+Pola	Arti	Contoh pada "a1b22c333"
+\d	    tepat 1 digit	1, 2, 2, 3, 3, 3
+\d+	    1 atau lebih	1, 22, 333
+\d*	    0 atau lebih	(bisa cocok string kosong)
+\d?	    0 atau 1	
+\d{3}	tepat 3 digit	333
+\d{2,4}	2 sampai 4 digit	22, 333
 '''
